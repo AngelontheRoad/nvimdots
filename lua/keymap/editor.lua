@@ -52,13 +52,13 @@ local mappings = {
 		["n|<leader>o"] = map_cr("setlocal spell! spelllang=en_us"):with_desc("edit: Toggle spell check"),
 
 		-- Builtins: Lsp
-		["n|<leader>td"] = map_callback(function()
+		["n|<leader>ld"] = map_callback(function()
 				_toggle_diagnostic()
 			end)
 			:with_noremap()
 			:with_silent()
 			:with_desc("edit: Toggle global display of virtual text"),
-		["n|<leader>th"] = map_callback(function()
+		["n|<leader>lh"] = map_callback(function()
 				_toggle_inlayhint()
 			end)
 			:with_noremap()
